@@ -5,111 +5,105 @@ html{
 	font-family: cursive, san-serif;	
 }
 #container{
-	width: 600px;
 	height: 550px;
-	background-color: rebeccapurple;
-	margin: 35px auto;
+	width: 600px;
 	padding: 20px;
+	margin: 35px auto;
 	border-radius: 10px;
-	box-shadow: 0px 5px 0px 0px #009DE4;
-	-moz-box-shadow: 0px 5px 0px 0px #009DE4;
-	-webkit-box-shadow: 0px 5px 0px 0px #009DE4;
+	background-color: rebeccapurple;
+	box-shadow: 0px 5px 0px 0px #502099;
+	-moz-box-shadow: 0px 5px 0px 0px #502099;
+	-webkit-box-shadow: 0px 5px 0px 0px #502099;
 	position: relative;
 }
 #message{
 	height: 70px;
 	width: 508px;
+	padding: 10px 8px 20px 8px;
+	margin: 40px auto 30px auto;
 	text-align: center;
-	background-color: #B481D9;
 	border-radius: 3px;
+	background-color: #B481D9;
 	box-shadow: 0px 5px 0px 0px #8153A8;
 	-moz-box-shadow: 0px 5px 0px 0px #8153A8;
 	-webkit-box-shadow: 0px 5px 0px 0px #8153A8;
-	margin: 10px auto 0px auto;
-	padding: 10px 8px 20px 8px;
 	font: 10px;
 	color: white;
 	line-height: 18px;
 	font-size: 16px;
+	position: relative;
+	
 }
-#pscore{
-	width: 90px;
-	height: 23px;
-	background-color: #F1FF92;
-	color: #888E5F;
+#life{
+	width: 90px;;
 	padding: 10px;
-	position: absolute;
-	left: 50px;
-	text-align: center;
-	font-size: 10px;
 	margin: 10px;
-	padding: 10px;
-	display: none;
 	border-radius: 3px;
+	background-color: #F1FF92;
 	box-shadow: 0px 5px 0px 0px #9DA853;
 	-moz-box-shadow: 0px 5px 0px 0px #9DA853;
 	-webkit-box-shadow: 0px 5px 0px 0px #9DA853;
+	color: #888E5F;
+	text-align: center;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+	display: none;
+}
+.life{
+	height: 23px;
+	width: 22px;
+	margin: 0 2px;
 }
 #score{
 	width: 90px;
-	background-color: #F1FF92;
-	color: #888E5F;
-	padding: 10px;
-	position: absolute;
-	left: 460px;
-	text-align: center;
 	margin: 10px;
 	padding: 10px;
-	display: none;
 	border-radius: 3px;
+	background-color: #F1FF92;
 	box-shadow: 0px 5px 0px 0px #9DA853;
 	-moz-box-shadow: 0px 5px 0px 0px #9DA853;
 	-webkit-box-shadow: 0px 5px 0px 0px #9DA853;
-}
-#correct{
+	color: #888E5F;
+	text-align: center;
 	position: absolute;
-	left: 280px;
-	background-color: #42E252;
-	color: #fff;
-	border-radius: 3px;
-	padding: 10px;
-	margin: 10px;
-	box-shadow: 0px 5px 0px 0px #9DA853;	
-	-moz-box-shadow: 0px 5px 0px 0px #9DA853;	
-	-webkit-box-shadow: 0px 5px 0px 0px #9DA853;	
+	top: 20px;
+	left: 460px;
 	display: none;
 }
-#wrong{
-	position: absolute;
-	left: 280px;
-	background-color: #DE401A;
-	color: #fff;
+#hit{
+	width: auto;
+	padding: 10px;
+	margin: 10px;
 	border-radius: 3px;
+	background-color: #42E252;
+	box-shadow: 0px 5px 0px 0px #9DA853;	
+	-moz-box-shadow: 0px 5px 0px 0px #9DA853;	
+	-webkit-box-shadow: 0px 5px 0px 0px #9DA853;
+	color: #fff;
+	position: absolute;
+	left: 270px;
+	display: none;
+}
+#miss{
 	margin: 10px;
 	padding: 10px;
+	border-radius: 3px;
+	background-color: #DE401A;
 	box-shadow: 0px 5px 0px 0px #B00000;
 	-moz-box-shadow: 0px 5px 0px 0px #B00000;
 	-webkit-box-shadow: 0px 5px 0px 0px #B00000;
+	color: #fff;
+	position: absolute;
+	top: 20px;
+	left: 240px;
 	display: none;
 }
-#tr{
-	width: 520px;
-	height: 50px;
-	background-color: #B481D9;
-	margin: 70px auto 10px auto;
-	text-align: center;
-	line-height: 45px;
-	border-radius: 3px;
-	color: white;
-	display: none;
-	box-shadow: 0px 5px 0px 0px #8153A8;
-	-moz-box-shadow: 0px 5px 0px 0px #8153A8;
-	-webkit-box-shadow: 0px 5px 0px 0px #8153A8;
-}
-#question{
+#game{
 	width: 520px;
 	height: 150px;
-	margin: 20px auto 10px auto;
+	margin: 30px auto;
+	border-radius: 3px;	
 	background-color: #9DA0EA;
 	box-shadow: 0px 5px 0px 0px #535AA8;
 	-moz-box-shadow: 0px 5px 0px 0px #535AA8;
@@ -118,13 +112,36 @@ html{
 	color: navajowhite;
 	text-align: center;
 	line-height: 135px;
-	border-radius: 3px;	
+	position: absolute;
+	left: 60px;
+	top: 170px;
+}
+#fruit{
+	height: 400px;
+	width: 520px;
+	margin: 30px auto;
+	border-radius: 3px;
+	background-color: #ffffff;
+	box-shadow: 0px 5px 0px 0px #535AA8;
+	-moz-box-shadow: 0px 5px 0px 0px #535AA8;
+	-webkit-box-shadow: 0px 5px 0px 0px #535AA8;	
+	overflow: hidden;
+	position: relative;
+	top: 30px;
+	display: none;
+ }
+.fruity{
+	height: 60px;
+	width: 60px;
+	;
+	display: none;
+	position: absolute;
 }
 #instruction{
 	width: 520px;
 	height: 50px;
 	background-color: #B481D9;
-	margin: 20px auto;
+	margin: 30px auto 40px auto;
 	text-align: center;
 	line-height: 45px;
 	color: white;
@@ -132,63 +149,24 @@ html{
 	box-shadow: 0px 5px 0px 0px #8153A8;
 	-moz-box-shadow: 0px 5px 0px 0px #8153A8;
 	-webkit-box-shadow: 0px 5px 0px 0px #8153A8;
-}
-#choices{
-	width: 520px;
-	height: 85px;
-	margin: 10px auto;
-	padding: 10px;
-}
-.box{
-	width: 85px;
-	height: 80px;
-	background-color: #FFF;
-	float: left;
-	border-radius: 3px;
-	margin-right: 46px;
-	padding: 5px;
-	cursor: pointer;
-	box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
-	text-align: center;
-	line-height: 75px;
 	position: relative;
-	transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-webkit-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	-ms-transition: all 0.2s;
+	top: 200px;
 }
-.box:hover, #startreset:hover{
-	background-color: #9C89F6;
-	color: white;
-	box-shadow: 0px 5px 0px 0px #6B54D3;
-	-moz-box-shadow: 0px 5px 0px 0px #6B54D3;
-	-webkit-box-shadow: 0px 5px 0px 0px #6B54D3;	
-}
-.box:active, #startreset:active{
-	box-shadow: 0px 0px 0px 0px #6B54D3;
-	-moz-box-shadow: 0px 0px 0px 0px #6B54D3;
-	-webkit-box-shadow: 0px 0px 0px 0px #6B54D3;
-	top: 5px;
-}
-#box4{
-	margin-right: 0px;
-}
-#startreset{
+#sr{
+	width: 170px;
+	padding: 10px;
+	margin: 20px auto;
 	border-radius: 3px;
 	background-color: rgba(255, 255, 255, 0.5);
-	width: 120px;
-	margin: 20px auto;
-	padding: 10px;
-	cursor: pointer;
-	color: white;
 	box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
 	-webkit-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
+	color: white;
+	cursor: pointer;
 	text-align: center;
-	position: relative;
+	position: absolute;
+	top: 467px;
+	left: 230px;
 	transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	-webkit-transition: all 0.2s;
@@ -196,20 +174,21 @@ html{
 	-ms-transition: all 0.2s;
 }
 #gameover{
-	height: 150px;
-	width: 520px;
-	text-align: center;
-	background-color: midnightblue;
-	display: none;
-	z-index: 2;
+	height: 280px;
+	width: 400px;
+	padding: 60px;
 	border-radius: 3px;
+	background-color: midnightblue;
 	box-shadow: 0px 5px 0px 0px #191970;
 	-moz-box-shadow: 0px 5px 0px 0px #191970;
 	-webkit-box-shadow: 0px 5px 0px 0px #191970;
-	left: 60px;
-	top: 150px;
-	position: absolute;
-	line-height: 40px;
+	z-index: 2;
 	color: white;
-	font-size: 20px;
+	font-size: 40px;
+	line-height: 50px;
+	text-align: center;
+	position: absolute;
+	top: 80px;
+	left: 60px;
+	display: none;
 }

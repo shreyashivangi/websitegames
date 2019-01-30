@@ -1,32 +1,42 @@
 <DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>MATHS GAME</TITLE>
-		<meta charset="utf-8" name="viewport" content="width=device-width, initiall-scale=1, userscalable=yes">
+		<title>FRUIT SLICE</TITLE>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	</head>
+	
 	<boby>
 		<div id="container">
-			<div id="message"><p><b>INSTRUCTION :</b> EACH TIME YOU CHOOSE RIGHT ANSWER YOUR SCORE WILL INCREASE BY ONE. AND CHOOSING WRONG ANSWER WILL DEDUCE ONE MARKS.</p></div>
-			<div id="pscore">YOUR PREVIOUS SCORE IS: <span id="prevscorevalue">0</span></div>
+			<div id="life"></div>
+			<div id="hit">HIT</div>
+			<div id="miss">MISSED</div>
 			<div id="score">SCORE: <span id="scorevalue">0</span></div>
-			<div id="correct">CORRECT</div>
-			<div id="wrong">TRY AGAIN</div>
-			<div id="tr">TIME REMAINING: <span id="trvalue">60</span> SEC</div>
-			<div id="question">SPEED MATHS</div>
-			<div id="instruction">PLAY THE GAME TO CHECK YOUR SPEED</div>
-			<div id="choices">
-				<div id="box1" class="box">P</div>
-				<div id="box2" class="box">L</div>
-				<div id="box3" class="box">A</div>
-				<div id="box4" class="box">Y</div>
+			
+			<div id="message"><p><b>INSTRUCTION :</b> YOU HAVE TO SLICE AS MANY FRUITS AS YOU CAN BUT BEWARE  !!   MISSING THREE OF THEM WILL MAKE YOU LOSE THE GAME.</p></div>
+			
+			<div id="game">FRIUT SLICE</div>
+			<div id="fruit">
+				<img id="fruity" class="fruity">
 			</div>
-			<div id="startreset">START GAME</div>
+			
+			<div id="instruction">ENJOY THE YUMMY FRUITS.</div>
+			<div id="sr">START GAME</div>
 			<div id="gameover">
 				<p>GAME OVER</p>
 				<p>YOUR SCORE IS 100</p>
 			</div>
 		</div>
+		<audio id="slicesound">
+			<source src="audio/slicefruit.mp3">
+			<source src="audio/slicefruit.ogg">
+		</audio>
+		<script src="C:\Users\LenovO\Documents\CWDC\JS\jquery-3.3.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>       
+
+	<script src="jquery.js"></script>
 	</boby>
-	<script src="javascript.js"></script>
+	
 </html>
